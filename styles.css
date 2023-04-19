@@ -46,3 +46,56 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root{
+	--fonts: Molle, Montserrat;
+	--yellow: #F6D64A;
+	--teal: #55BCD5;
+	--purple: #9B26B0;
+	--blue: #499BD2;
+	--dark-gray: #222222;
+	--light-gray:#EAEAEA;
+	--white: #FFF;
+	--black: #000;
+}
+
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#skip:focus{
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+body{
+	font-family: Montserrat;
+	padding: 0;
+	margin: 0 auto;
+}
+
+h1, h2, h3{
+	font-family: var(--fonts);
+}
+
+header{
+	background: rgb(255,255,255);
+	background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(34,193,195,1) 100%);
+	width: clac(100% - 2rem);
+	padding: 1rem;
+}
+
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	}
